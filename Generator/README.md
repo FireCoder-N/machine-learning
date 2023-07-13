@@ -40,5 +40,3 @@ The code of the file `ex21.py` handles opening the .mat file using scipy (Refere
 The result of generating 100 handwritten digit 8 images is presented in the image below:
 
 ![Generated Digits](https://github.com/FireCoder-N/machine-learning/blob/main/Generator/100eights.png?raw=true)
-
-Each row of the 10×10 matrix corresponds to a handwritten digit 8.
