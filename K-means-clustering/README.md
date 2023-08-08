@@ -54,7 +54,7 @@ The K-Means algorithm can be summarized with the following mathematical notation
 
 As an example, there are given n=200 data points, each with dimension m=2. It is also given that the first 100 points correspond to one cluster (e.g. red) and the other 100 points belong to the second cluster (e.g. blue). As stated before, the algorithm doesn't take into account this knowledge. After the execusion, K-means algorithm splits the data in two clusters, however we can't know whether the points that the algorithm classifies as cluster one correspond to actual cluster 1 and thus, we calculate both possible scenarios and keep the one that minimizes hte error.
 
-The result of the execution is summarized in the following picture.
+The result of the execution (file 3a.py) is summarized in the following picture.
 
 ![Data Clustering](https://github.com/FireCoder-N/machine-learning/blob/main//K-means-clustering/3a.png?raw=true)
 
@@ -79,7 +79,7 @@ In other words, in the new coordinate system, each point is written as {X<sub>i<
 - ![Euclidean Distance](https://latex.codecogs.com/svg.latex?\inline&space;\{||X_i||^2}=\left(\sqrt{(x_i-0)^2+(y_i-0)^2}\right)^2={x_i^2+y_i^2}) is the distanse of point x<sub>i</sub> from O(0,0).
 
 
-The result is this time presented below, with the exact same notation used.
+The result this time (file 3b.py) is presented below, with the exact same notation used.
 ![Data Clustering v2](https://github.com/FireCoder-N/machine-learning/blob/main//K-means-clustering/3b.png?raw=true)
 
 As expected and observed 'by inspection', using this method, the error is dramatically improved and its exact values in this particular example are:
