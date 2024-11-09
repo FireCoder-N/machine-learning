@@ -27,9 +27,7 @@ The Gaussian kernel is highly effective in situations where data are not linearl
 
 ### Probability Density Approximation with Kernels
 In machine learning, kernel functions are also used to approximate probability density functions (PDFs) of distributions, as explored in section "Άσκηση 1" of the report. Given a dataset, we can estimate the PDF by summing the contributions of Gaussian kernels centered at each data point:
-$$
-f(x) = \frac{1}{n} \sum_{i=1}^{n} K(x - x_i, h)
-$$
+$$f(x) = \frac{1}{n} \sum_{i=1}^{n} K(x - x_i, h)$$
 where:
 - $n$ is the number of data points.
 - $x_i$ are the individual data points.
