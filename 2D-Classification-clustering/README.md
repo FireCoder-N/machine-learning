@@ -39,7 +39,9 @@ In our project, we utilize the Gaussian kernel to classify data points based on 
 
 ### Objective Function
 We set up an optimization problem to find a function $\phi(X)$ that correctly classifies the "stars" and "circles." Our objective is to minimize the classification error, regularized by the norm of $\phi(X)$:
-$$\min_{\phi \in V} \left\{ \sum_{X_i \in \text{stars}} \left(1 - \phi(X_i)\right)^2 + \sum_{X_j \in \text{circles}} \left(1 + \phi(X_j)\right)^2 + \lambda \|\phi(X)\|^2 \right\}$$
+```math
+\min_{\phi \in V} \left\{ \sum_{X_i \in \text{stars}} \left(1 - \phi(X_i)\right)^2 + \sum_{X_j \in \text{circles}} \left(1 + \phi(X_j)\right)^2 + \lambda \|\phi(X)\|^2 \right\}
+```
 where:
 - $V$ is the vector space defined by the kernel function.
 - $\lambda$ is a regularization parameter that controls overfitting.
