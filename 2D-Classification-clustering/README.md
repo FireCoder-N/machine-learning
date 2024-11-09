@@ -21,7 +21,7 @@ K(X, Y) = e^{-\frac{1}{h} \|X - Y\|^2}
 ```
 where:
 - $h$ is a positive hyperparameter that controls the spread of the kernel.
-- $ \|X - Y\|^2 $ denotes the squared Euclidean distance between points $X$ and $Y$.
+- $\|X - Y\|^2$ denotes the squared Euclidean distance between points $X$ and $Y$.
 
 The Gaussian kernel is highly effective in situations where data are not linearly separable in the input space, as it maps the data into a higher-dimensional space where a linear separator can often be found.
 
