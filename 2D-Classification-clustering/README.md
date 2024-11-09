@@ -16,9 +16,9 @@ A kernel function is a measure of similarity between two data points in the feat
 
 ### Gaussian (RBF) Kernel
 For this project, we use the Gaussian kernel, defined as:
-$$
+```math
 K(X, Y) = e^{-\frac{1}{h} \|X - Y\|^2}
-$$
+```
 where:
 - $h$ is a positive hyperparameter that controls the spread of the kernel.
 - $ \|X - Y\|^2 $ denotes the squared Euclidean distance between points $X$ and $Y$.
