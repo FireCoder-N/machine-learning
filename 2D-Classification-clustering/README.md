@@ -48,11 +48,15 @@ where:
 
 ### Representer Theorem and Solution
 According to the Representer Theorem, we can approximate $\phi(X)$ as a linear combination of kernel functions centered at each data point:
-$$\hat{\phi}(X) = \sum_{X_i \in \text{stars}} \alpha_i K(X, X_i) + \sum_{X_j \in \text{circles}} \beta_j K(X, X_j)$$
+```math
+\hat{\phi}(X) = \sum_{X_i \in \text{stars}} \alpha_i K(X, X_i) + \sum_{X_j \in \text{circles}} \beta_j K(X, X_j)
+```
 where $\alpha_i$ and $\beta_j$ are coefficients obtained by solving the optimization problem.
 
 The regularization term $\|\phi(X)\|^2$ can be simplified by noting that:
-$$\|\phi(X)\|^2 = \|\hat{\phi}(X)\|^2 + \|\phi(X) - \hat{\phi}(X)\|^2 \geq \|\hat{\phi}(X)\|^2$$
+```math
+\|\phi(X)\|^2 = \|\hat{\phi}(X)\|^2 + \|\phi(X) - \hat{\phi}(X)\|^2 \geq \|\hat{\phi}(X)\|^2
+```
 allowing us to substitute $\hat{\phi}(X)$ in the objective function for computational efficiency.
 
 ### Classification Decision Rule
